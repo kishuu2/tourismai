@@ -1,0 +1,142 @@
+.back {
+    background: url(https://hdqwalls.com/download/forest-mountains-3v-1920x1080.jpg);
+    background-position: center;
+    height: 720px;
+    background-clip: border-box;
+    background-size: cover;
+    display: flex;
+    margin-top:50px;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#matched{
+    font-size: 14px;
+    color: red;
+    font-weight: 600;
+    display: none;
+}
+
+.content-form{
+    padding: 18px;
+    width: 350px;
+    transition: .5s all ease;
+}
+
+.content-form:hover{
+    transition: .5s all ease;
+    border-radius: 24px;
+    background-color: #252525;
+}
+
+.other-sec{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.social,.socials{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border: 2px solid gray;
+    border-radius: 8px;
+    padding: 4px;
+    align-items: center;
+    transition: .5s all ease;
+    backdrop-filter: blur(4px);
+}
+.socials{
+    background-color:rgb(87, 87, 239) ;
+    border: 2px solid rgb(87, 87, 239);
+}
+.social:hover{
+    background-color: darkgrey;
+}
+#btn-2,#btn-3{
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: aliceblue;
+}
+#btn-2:hover{
+    color: black;
+}
+
+.others{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    border-radius: 14px;
+    padding: 12px;
+    align-items: center;
+    backdrop-filter: blur(4px);
+    width: 90%;
+    color: aliceblue;
+}
+
+@media screen and (min-width: 550px) {
+    
+    #photo1{
+        width: 550px;
+        height: auto;
+        aspect-ratio: 1/0.6;
+        border-radius: 12px;
+        filter: blur(0.2px);
+    }
+    .text-8{
+        position: absolute;
+        top: 35%;
+        padding: 12px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .others{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        border-radius: 14px;
+        padding: 0;
+        align-items: center;
+        backdrop-filter: blur(4px);
+        width: 90%;
+        color: aliceblue;
+        margin-top: 30px;
+    }
+    #photo1{
+        width: 550px;
+        height: auto;
+        aspect-ratio: 1/0.6;
+        border-radius: 12px;
+        filter: blur(0.2px);
+    }
+    .text-8{
+        position: absolute;
+        top: 10%;
+        padding: 12px;
+    }
+}
+
+#photo1{
+    width: 450px;
+    height: auto;
+    aspect-ratio: 1/0.6;
+    border-radius: 12px;
+    filter: blur(0.2px);
+}
+.photos{
+    position: relative;
+}
+
+#forgot{
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+}
+#forgot:hover{
+    color: lightblue;
+}

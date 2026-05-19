@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$oid": "66e3b7d1d9771cc836ed6809"
+  },
+  "email": "ravimoya@gmail.com",
+  "password": "ravi",
+  "date": {
+    "$date": "2024-09-13T03:56:01.576Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e42337e263110ad31e7beb"
+  },
+  "email": "nehamishra@gmail.com",
+  "password": "neha",
+  "date": {
+    "$date": "2024-09-13T11:34:17.422Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e50c51e263110ad31e7bef"
+  },
+  "email": "akshat@gmail.com",
+  "password": "akshat",
+  "date": {
+    "$date": "2024-09-14T04:08:49.810Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fa2ae107f8e41c0c432cab"
+  },
+  "email": "sakshi@gmail.com",
+  "password": "sakshi",
+  "date": {
+    "$date": "2024-09-30T04:36:49.849Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fa9fc207f8e41c0c432d61"
+  },
+  "email": "chokwalakishan@gmail.com",
+  "password": "kishuu",
+  "date": {
+    "$date": "2024-09-30T12:55:30.984Z"
+  },
+  "__v": 0
+}]

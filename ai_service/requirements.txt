@@ -1,0 +1,6 @@
+flask
+flask-cors
+pymongo
+numpy
+python-dotenv
+gunicorn

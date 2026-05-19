@@ -1,0 +1,104 @@
+[{
+  "_id": {
+    "$oid": "66f67fd2322410d783f37022"
+  },
+  "name": "Kashmir Tour Package",
+  "price": 15000,
+  "days": 4,
+  "nights": 5,
+  "date": {
+    "$date": "2024-09-27T09:50:10.946Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f6815f322410d783f37034"
+  },
+  "name": "Golden Triangle Package",
+  "price": 3600,
+  "days": 3,
+  "nights": 2,
+  "date": {
+    "$date": "2024-09-27T09:56:47.908Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f681ff322410d783f37041"
+  },
+  "name": "Adi Kedarnath Trekking Packages",
+  "price": 4300,
+  "days": 5,
+  "nights": 4,
+  "date": {
+    "$date": "2024-09-27T09:59:27.637Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f68281322410d783f3704b"
+  },
+  "name": "Best of Gujarat heritage",
+  "price": 8599,
+  "days": 10,
+  "nights": 9,
+  "date": {
+    "$date": "2024-09-27T10:01:37.268Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f682c9322410d783f3704d"
+  },
+  "name": "Ooty Munnar Kodaiknal",
+  "price": 6000,
+  "days": 7,
+  "nights": 6,
+  "date": {
+    "$date": "2024-09-27T10:02:49.032Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f6ab14704df1db0afa3e3f"
+  },
+  "name": "vadodra tour package",
+  "price": 1200,
+  "days": 3,
+  "nights": 2,
+  "date": {
+    "$date": "2024-09-27T12:54:44.487Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670122ede1dab236eb620575"
+  },
+  "name": "div-daman Tour package",
+  "price": 4500,
+  "days": 8,
+  "nights": 7,
+  "date": {
+    "$date": "2024-10-30T00:00:00.000Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6716817ac421a4649d49df14"
+  },
+  "name": "Mumbai Tour",
+  "price": 4500,
+  "days": 3,
+  "nights": 2,
+  "date": {
+    "$date": "2024-10-23T00:00:00.000Z"
+  },
+  "__v": 0
+}]

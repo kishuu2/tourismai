@@ -1,0 +1,29 @@
+.main{
+    margin-top:40px;
+    padding:50px;
+}
+
+.button2{
+    border:1px solid gray;
+    color: blue;
+    transition: .3s all ease;
+}
+.button2:hover{
+    box-shadow: 0 0 4px blue, 0 0 8px lightblue;
+}
+
+.pack{
+    position: relative;
+    transition: .3s all ease;
+    cursor: pointer;
+}
+.one1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%,-50%);
+}
+.pack:hover .one1{
+    opacity: 9;
+}
