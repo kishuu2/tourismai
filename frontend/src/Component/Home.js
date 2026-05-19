@@ -33,7 +33,7 @@ const Home = () => {
 
   const [packages, setPackages] = useState([]);
   useEffect(() => {
-    axios.get('https://tourismaiservice.onrender.com/displaypackage')
+    axios.get('https://tourismai-9wfg.onrender.com/displaypackage')
       .then(response => { setPackages(response.data); })
       .catch(err => { console.error('Error fetching packages:', err.message); })
   }, [])
@@ -64,7 +64,7 @@ const Home = () => {
       setAiAsked(true);
 
       const response = await axios.post(
-        'http://localhost:8000/recommend',
+        'https://tourismaiservice.onrender.com/recommend',
         {
           budget: aiBudget,
           travelType: aiTravelType,
