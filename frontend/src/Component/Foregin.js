@@ -36,7 +36,7 @@ const Foregin = () => {
     }
   
     try {
-      const response = await fetch('http://localhost:5000/booking', {
+      const response = await fetch('https://tourismai-9wfg.onrender.com/booking', {
         method: "post",
         headers: {
           'Content-Type': 'application/json'
@@ -93,7 +93,7 @@ const Foregin = () => {
   };
 
   useEffect(()=>{
-    axios.get('http://localhost:5000/displaypackage')
+    axios.get('https://tourismai-9wfg.onrender.com/displaypackage')
     .then(packages => setPackages(packages.data))
     .catch(err => console.log(err))
   },[])
@@ -104,7 +104,7 @@ const Foregin = () => {
     try {
       console.log(`Deleting Number with bookings: ${number}`); // More informative logging
   
-      const response = await axios.delete(`http://localhost:5000/deletebookings/${number}`);
+      const response = await axios.delete(`https://tourismai-9wfg.onrender.com/deletebookings/${number}`);
   
       if (response.status === 200) {
         // Improved UI update
@@ -129,7 +129,7 @@ const Foregin = () => {
   useEffect(() => {
     const fetchBooking = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/displaybooking1/${number}`);
+        const response = await fetch(`https://tourismai-9wfg.onrender.com/displaybooking1/${number}`);
         if (response.ok) {
           const data = await response.json();
           setBookingData(data);
@@ -151,7 +151,7 @@ const Foregin = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch(`http://localhost:5000/updatebooking/${number}`, {
+      const response = await fetch(`https://tourismai-9wfg.onrender.com/updatebooking/${number}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json'

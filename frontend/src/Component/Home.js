@@ -33,7 +33,7 @@ const Home = () => {
 
   const [packages, setPackages] = useState([]);
   useEffect(() => {
-    axios.get('http://localhost:5000/displaypackage')
+    axios.get('https://tourismaiservice.onrender.com/displaypackage')
       .then(response => { setPackages(response.data); })
       .catch(err => { console.error('Error fetching packages:', err.message); })
   }, [])

@@ -34,19 +34,19 @@ export default function Admin() {
     const [manager,setManager] = useState([])
 
   useEffect(()=>{
-    axios.get('http://localhost:5000/displaybooking')
+    axios.get('https://tourismai-9wfg.onrender.com/displaybooking')
     .then(bookings =>setBookings(bookings.data))
     .catch(err => console.log(err))
   }, [])
 
   useEffect(()=>{
-    axios.get('http://localhost:5000/displayuser')
+    axios.get('https://tourismai-9wfg.onrender.com/displayuser')
     .then(users =>setUsers(users.data))
     .catch(err => console.log(err))
   }, [])
 
   useEffect(()=>{
-    axios.get('http://localhost:5000/displaymanager')
+    axios.get('https://tourismai-9wfg.onrender.com/displaymanager')
     .then(manager => setManager(manager.data))
     .catch(err => console.log(err))
   },[])
@@ -71,7 +71,7 @@ export default function Admin() {
     }
   
     try {
-      const response = await fetch('http://localhost:5000/manager', {
+      const response = await fetch('https://tourismai-9wfg.onrender.com/manager', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -101,7 +101,7 @@ export default function Admin() {
     try {
       console.log(`Deleting manager with email: ${email}`); // More informative logging
   
-      const response = await axios.delete(`http://localhost:5000/managers/${email}`);
+      const response = await axios.delete(`https://tourismai-9wfg.onrender.com/managers/${email}`);
   
       if (response.status === 200) {
         // Improved UI update
@@ -122,7 +122,7 @@ export default function Admin() {
     try {
       console.log(`Deleting Number with bookings: ${number}`); // More informative logging
   
-      const response = await axios.delete(`http://localhost:5000/deletebookings/${number}`);
+      const response = await axios.delete(`https://tourismai-9wfg.onrender.com/deletebookings/${number}`);
   
       if (response.status === 200) {
         // Improved UI update

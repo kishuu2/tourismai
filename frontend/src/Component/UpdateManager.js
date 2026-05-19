@@ -14,7 +14,7 @@ export default function UpdateManager(managerId) {
   useEffect(() => {
     const fetchBooking = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/displaymanager2/${email}`);
+        const response = await fetch(`https://tourismai-9wfg.onrender.com/displaymanager2/${email}`);
         if (response.ok) {
           const data = await response.json();
           setManagerData(data);
@@ -36,7 +36,7 @@ export default function UpdateManager(managerId) {
     e.preventDefault();
 
     try {
-      const response = await fetch(`http://localhost:5000/updatemanager/${email}`, {
+      const response = await fetch(`https://tourismai-9wfg.onrender.com/updatemanager/${email}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json'

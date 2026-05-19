@@ -22,7 +22,7 @@ const Form = () => {
         //Manager Login
         try {
             // Send login request to server
-            const response = await axios.post('http://localhost:5000/managerlogin', {
+            const response = await axios.post('https://tourismai-9wfg.onrender.com/managerlogin', {
               username,
               password,
             });
@@ -50,7 +50,7 @@ const Form = () => {
         if(email==email || password==password){
         try {
           // Send login request to server
-          const response = await axios.post('http://localhost:5000/login', {
+          const response = await axios.post('https://tourismai-9wfg.onrender.com/login', {
             email,
             password,
           });

@@ -35,19 +35,19 @@ export default function Manager() {
      const [hoteldata,setHoteldata] = useState([])
  
    useEffect(()=>{
-     axios.get('http://localhost:5000/displaybooking')
+     axios.get('https://tourismai-9wfg.onrender.com/displaybooking')
      .then(bookings =>setBookings(bookings.data))
      .catch(err => console.log(err))
    }, [])
  
    useEffect(()=>{
-     axios.get('http://localhost:5000/displayuser')
+     axios.get('https://tourismai-9wfg.onrender.com/displayuser')
      .then(users =>setUsers(users.data))
      .catch(err => console.log(err))
    }, [])
  
    useEffect(()=>{
-     axios.get('http://localhost:5000/displaymanager')
+     axios.get('https://tourismai-9wfg.onrender.com/displaymanager')
      .then(manager => setManager(manager.data))
      .catch(err => console.log(err))
    },[])
@@ -78,7 +78,7 @@ export default function Manager() {
        }
 
      try {
-       const response = await fetch('http://localhost:5000/package', {
+       const response = await fetch('https://tourismai-9wfg.onrender.com/package', {
          method: 'POST',
          headers: {
            'Content-Type': 'application/json',
@@ -115,7 +115,7 @@ export default function Manager() {
       }
 
     try {
-      const response = await fetch('http://localhost:5000/hotel', {
+      const response = await fetch('https://tourismai-9wfg.onrender.com/hotel', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -148,7 +148,7 @@ export default function Manager() {
      try {
        console.log(`Deleting Number with bookings: ${number}`); // More informative logging
    
-       const response = await axios.delete(`http://localhost:5000/deletebookings/${number}`);
+       const response = await axios.delete(`https://tourismai-9wfg.onrender.com/deletebookings/${number}`);
    
        if (response.status === 200) {
          // Improved UI update
@@ -165,13 +165,13 @@ export default function Manager() {
    };
 
    useEffect(()=>{
-    axios.get('http://localhost:5000/displaypackage')
+    axios.get('https://tourismai-9wfg.onrender.com/displaypackage')
     .then(packages => setPackages(packages.data))
     .catch(err => console.log(err))
   },[])
 
   useEffect(()=>{
-    axios.get('http://localhost:5000/displayhotel')
+    axios.get('https://tourismai-9wfg.onrender.com/displayhotel')
     .then(hotel => setHoteldata(hotel.data))
     .catch(err => console.log(err))
   },[])
@@ -183,7 +183,7 @@ export default function Manager() {
     try { 
       console.log(`Deleting package with name: ${pack}`); // More informative logging
   
-      const response = await axios.delete(`http://localhost:5000/deletepackages/${pack}`);
+      const response = await axios.delete(`https://tourismai-9wfg.onrender.com/deletepackages/${pack}`);
   
       if (response.status === 200) {
         // Improved UI update
@@ -221,7 +221,7 @@ export default function Manager() {
     try {
       console.log(`Deleting Number with bookings: ${gname}`); // More informative logging
   
-      const response = await axios.delete(`http://localhost:5000/deleteHotel/${gname}`);
+      const response = await axios.delete(`https://tourismai-9wfg.onrender.com/deleteHotel/${gname}`);
   
       if (response.status === 200) {
         // Improved UI update

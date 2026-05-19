@@ -22,7 +22,7 @@ const Registration = () => {
       console.log("data in console");
           e.preventDefault();
           let result = await fetch(
-          'http://localhost:5000/register', {
+          'https://tourismai-9wfg.onrender.com/register', {
               method: "post",
               body: JSON.stringify({ email , password}),
               headers: {
