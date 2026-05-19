@@ -268,7 +268,7 @@ const Home = () => {
               <span className="ai-title-accent"> Let AI Decide.</span>
             </h2>
             <p className="ai-finder-sub">
-              Fill in 4 quick details — our AI recommends your perfect top 3 destinations instantly.
+              Fill in 4 quick details — our AI recommends your perfect top destinations instantly.
             </p>
           </div>
 
@@ -370,7 +370,7 @@ const Home = () => {
           {aiResults.length > 0 && !aiLoading && (
             <>
               <div className="ai-results-label">
-                ✦ AI Recommended Top 3 Destinations for You (Based on KNN Algorithm)
+                ✦ AI Recommended Top Destinations for You (Based on KNN Algorithm).
               </div>
 
               <div className="ai-results-grid">
