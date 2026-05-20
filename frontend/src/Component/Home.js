@@ -227,7 +227,7 @@ const Home = () => {
 
       <div className="second-main">
         <div className="back-2 p-4">
-          <h3 id='india-guide' className='text-center'>India Travel Guide</h3>
+          <h3 id='india-guide' className='text-center'>Tourism Guide</h3>
           <div className="packages">
             {
               packages.map((pkg) => {
